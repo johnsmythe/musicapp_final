@@ -1,0 +1,3792 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 13:43:03 -0400
+Processing by TracksController#index as HTML
+Completed 500 Internal Server Error in 202ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tracks'):
+  app/controllers/tracks_controller.rb:6:in `new'
+  app/controllers/tracks_controller.rb:6:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (171.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 13:43:04 -0400
+Processing by TracksController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'tracks'):
+  app/controllers/tracks_controller.rb:6:in `new'
+  app/controllers/tracks_controller.rb:6:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (42.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (102.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (12.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (964.1ms)[0m  CREATE TABLE "tracks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "thumbnail_url" varchar(255), "video_id" varchar(255)) 
+  [1m[36m (35.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (34.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (51.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130707043017')
+  [1m[36m (138.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130616205845')[0m
+  [1m[35m (101.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130630225550')
+  [1m[36m (396.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130630225625')[0m
+  [1m[35m (38.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130702224651')
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 13:44:50 -0400
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  Rendered tracks/_createlist.html.erb (2.0ms)
+  Rendered tracks/index.html.erb within layouts/application (34.0ms)
+Compiled tracks.css  (35ms)  (pid 8600)
+Compiled font-awesome.css  (114ms)  (pid 8600)
+Compiled application.css  (519ms)  (pid 8600)
+Compiled jquery.js  (8ms)  (pid 8600)
+Compiled jquery_ujs.js  (0ms)  (pid 8600)
+Compiled tracks.js  (2022ms)  (pid 8600)
+Compiled application.js  (2452ms)  (pid 8600)
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+Completed 200 OK in 3600ms (Views: 3473.2ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 13:44:54 -0400
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  Rendered tracks/index.html.erb within layouts/application (9.0ms)
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 13:44:54 -0400
+Served asset /application.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 13:44:54 -0400
+Served asset /font-awesome.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 13:44:54 -0400
+Served asset /tracks.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 13:44:54 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 13:44:54 -0400
+Served asset /jquery.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 13:44:54 -0400
+Served asset /tracks.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 13:44:54 -0400
+Served asset /application.js - 304 Not Modified (58ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 13:44:57 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"fuck"}, "commit"=>"add"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (33.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 10 Aug 2013 17:44:58 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/DY3OqM05xjo/hqdefault.jpg"], ["title", "\"F**K UP\" MUSIC VIDEO by SHANE DAWSON"], ["updated_at", Sat, 10 Aug 2013 17:44:58 UTC +00:00], ["video_id", "DY3OqM05xjo"]]
+  [1m[36m (40.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (34.0ms)
+  Rendered tracks/create.js.erb (42.0ms)
+Completed 200 OK in 1331ms (Views: 75.0ms | ActiveRecord: 74.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 13:44:58 -0400
+Served asset /remove.png - 304 Not Modified (241ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 13:45:02 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"I am the bet"}, "commit"=>"add"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 10 Aug 2013 17:45:03 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/j7_lSP8Vc3o/hqdefault.jpg"], ["title", "2NE1 - I AM THE BEST (내가 제일 잘 나가) M/V"], ["updated_at", Sat, 10 Aug 2013 17:45:03 UTC +00:00], ["video_id", "j7_lSP8Vc3o"]]
+  [1m[35m (69.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/create.js.erb (9.0ms)
+Completed 200 OK in 1364ms (Views: 28.0ms | ActiveRecord: 74.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 13:45:03 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 13:45:04 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (2.0ms)
+Completed 200 OK in 30ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 13:45:10 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"sopdfjoisd oihf sdfi jdsfilh sduk fhds"}, "commit"=>"add"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered tracks/create.js.erb (2.0ms)
+Completed 200 OK in 483ms (Views: 24.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 13:45:14 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"sdfilhsdlif "}, "commit"=>"add"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered tracks/create.js.erb (2.0ms)
+Completed 200 OK in 172ms (Views: 24.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 13:45:16 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"oiwfoIAHFD "}, "commit"=>"add"}
+  [1m[35mTrack Load (0.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered tracks/create.js.erb (2.0ms)
+Completed 200 OK in 191ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 13:45:18 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"../.S"}, "commit"=>"add"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 10 Aug 2013 17:45:18 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/aAhPaiajwDY/hqdefault.jpg"], ["title", "Assassin's Creed Meets Parkour in Real Life"], ["updated_at", Sat, 10 Aug 2013 17:45:18 UTC +00:00], ["video_id", "aAhPaiajwDY"]]
+  [1m[35m (1074.1ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (7.0ms)
+Completed 200 OK in 1945ms (Views: 35.0ms | ActiveRecord: 1077.1ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 13:45:20 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"../.S"}, "commit"=>"add"}
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 10 Aug 2013 17:45:21 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/aAhPaiajwDY/hqdefault.jpg"], ["title", "Assassin's Creed Meets Parkour in Real Life"], ["updated_at", Sat, 10 Aug 2013 17:45:21 UTC +00:00], ["video_id", "aAhPaiajwDY"]]
+  [1m[36m (82.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (8.0ms)
+Completed 200 OK in 1022ms (Views: 30.0ms | ActiveRecord: 86.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 13:45:21 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 13:45:24 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"FRAMELESS HOORAY"}, "commit"=>"add"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 10 Aug 2013 17:45:24 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/DOyUezT77vQ/hqdefault.jpg"], ["title", "Die Zeit steht still - Frame-Less"], ["updated_at", Sat, 10 Aug 2013 17:45:24 UTC +00:00], ["video_id", "DOyUezT77vQ"]]
+  [1m[35m (52.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/create.js.erb (106.0ms)
+Completed 200 OK in 547ms (Views: 129.0ms | ActiveRecord: 57.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 13:45:24 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/tracks/4" for 127.0.0.1 at 2013-08-10 13:45:26 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"4"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 4]]
+  [1m[35m (63.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (1.0ms)
+Completed 200 OK in 95ms (Views: 24.0ms | ActiveRecord: 66.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 13:45:27 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/tracks/2" for 127.0.0.1 at 2013-08-10 13:45:27 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"2"}
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 2]]
+  [1m[35m (44.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 69ms (Views: 20.0ms | ActiveRecord: 46.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 13:45:28 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/tracks/1" for 127.0.0.1 at 2013-08-10 13:45:28 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"1"}
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 1]]
+  [1m[35m (85.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 233ms (Views: 140.0ms | ActiveRecord: 87.0ms)
+
+
+Started DELETE "/tracks/3" for 127.0.0.1 at 2013-08-10 13:45:28 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"3"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (5.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 3]]
+  [1m[35m (39.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (1.0ms)
+Completed 200 OK in 94ms (Views: 45.0ms | ActiveRecord: 45.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 13:45:29 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 13:45:29 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 13:54:34 -0400
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  Rendered tracks/_createlist.html.erb (2.0ms)
+  Rendered tracks/_track.html.erb (4.0ms)
+  Rendered tracks/index.html.erb within layouts/application (27.0ms)
+Compiled application.css  (14ms)  (pid 8600)
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+Completed 200 OK in 434ms (Views: 428.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 13:54:35 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 13:54:35 -0400
+Served asset /application.css - 200 OK (17ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 13:54:35 -0400
+Served asset /tracks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 13:54:35 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 13:54:35 -0400
+Served asset /tracks.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 13:54:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 13:54:35 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 13:54:35 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started DELETE "/tracks/5" for 127.0.0.1 at 2013-08-10 13:54:45 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"5"}
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 5]]
+  [1m[35m (112.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 140ms (Views: 21.0ms | ActiveRecord: 114.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 13:54:46 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 13:54:49 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"Mother Mother Ghosting"}, "commit"=>"add"}
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 10 Aug 2013 17:54:50 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/lAhUScrPC7Y/hqdefault.jpg"], ["title", "Mother Mother - Ghosting"], ["updated_at", Sat, 10 Aug 2013 17:54:50 UTC +00:00], ["video_id", "lAhUScrPC7Y"]]
+  [1m[36m (64.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (4.0ms)
+  Rendered tracks/create.js.erb (12.0ms)
+Completed 200 OK in 1029ms (Views: 37.0ms | ActiveRecord: 67.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 13:54:51 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 13:54:55 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"Neutral Milk Hotel Oh Sister"}, "commit"=>"add"}
+  [1m[35mTrack Load (0.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 10 Aug 2013 17:54:56 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/u8fvolPEETk/hqdefault.jpg"], ["title", "Neutral Milk Hotel - Oh Sister (Studio Version) JUST RELEASED"], ["updated_at", Sat, 10 Aug 2013 17:54:56 UTC +00:00], ["video_id", "u8fvolPEETk"]]
+  [1m[35m (62.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/create.js.erb (8.0ms)
+Completed 200 OK in 998ms (Views: 30.0ms | ActiveRecord: 65.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 13:54:56 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 13:54:59 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"I am the Walrus"}, "commit"=>"add"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 10 Aug 2013 17:55:00 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/Ap6kSV_U45o/hqdefault.jpg"], ["title", "The Beatles - I am the walrus HD and HQ"], ["updated_at", Sat, 10 Aug 2013 17:55:00 UTC +00:00], ["video_id", "Ap6kSV_U45o"]]
+  [1m[36m (111.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (8.0ms)
+Completed 200 OK in 1009ms (Views: 25.0ms | ActiveRecord: 114.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 13:55:00 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 13:55:01 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 68ms (Views: 40.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 13:55:12 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (4.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (124.6ms)[0m  DROP TABLE "tracks"
+  [1m[36m (49.1ms)[0m  [1mCREATE TABLE "tracks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "thumbnail_url" varchar(255), "video_id" varchar(255)) [0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (38.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (37.0ms)[0m  DROP TABLE "tracks"
+  [1m[36m (43.0ms)[0m  [1mCREATE TABLE "tracks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "thumbnail_url" varchar(255), "video_id" varchar(255)) [0m
+  [1m[35m (1.0ms)[0m  SELECT version FROM "schema_migrations"
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 19:21:11 -0400
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  Rendered tracks/_createlist.html.erb (2.0ms)
+  Rendered tracks/index.html.erb within layouts/application (83.0ms)
+Compiled tracks.css  (103ms)  (pid 4164)
+Compiled application.css  (50ms)  (pid 4164)
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+Completed 200 OK in 1082ms (Views: 793.0ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 19:21:13 -0400
+Served asset /tracks.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 19:21:13 -0400
+Served asset /application.css - 200 OK (15ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 19:21:13 -0400
+Served asset /font-awesome.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 19:21:13 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 19:21:13 -0400
+Served asset /tracks.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 19:21:13 -0400
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 19:21:13 -0400
+Served asset /application.js - 304 Not Modified (22ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:21:16 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (2.0ms)
+Completed 200 OK in 35ms (Views: 30.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 19:21:26 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"run the jewels"}, "commit"=>"add"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (141.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 10 Aug 2013 23:21:27 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/c_rwa4ZbKgA/hqdefault.jpg"], ["title", "Run the Jewels - 36\" Chain"], ["updated_at", Sat, 10 Aug 2013 23:21:27 UTC +00:00], ["video_id", "c_rwa4ZbKgA"]]
+  [1m[36m (96.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (16.0ms)
+  Rendered tracks/create.js.erb (25.0ms)
+Completed 200 OK in 1295ms (Views: 176.0ms | ActiveRecord: 238.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:21:28 -0400
+Served asset /remove.png - 304 Not Modified (15ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 19:21:32 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"run the jewels run the jewels "}, "commit"=>"add"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 10 Aug 2013 23:21:33 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/9Bzrj2mtAC4/hqdefault.jpg"], ["title", "Run The Jewels - Run The Jewels"], ["updated_at", Sat, 10 Aug 2013 23:21:33 UTC +00:00], ["video_id", "9Bzrj2mtAC4"]]
+  [1m[35m (58.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/create.js.erb (8.0ms)
+Completed 200 OK in 923ms (Views: 32.0ms | ActiveRecord: 63.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:21:33 -0400
+Served asset /remove.png - 304 Not Modified (3ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 19:21:38 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"run the jewels pitchfork"}, "commit"=>"add"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 10 Aug 2013 23:21:39 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/DCn2NIuRDQg/hqdefault.jpg"], ["title", "Run The Jewels - \"Run The Jewels\" - Pitchfork Music Festival 2013."], ["updated_at", Sat, 10 Aug 2013 23:21:39 UTC +00:00], ["video_id", "DCn2NIuRDQg"]]
+  [1m[36m (128.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (7.0ms)
+Completed 200 OK in 970ms (Views: 27.0ms | ActiveRecord: 131.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:21:39 -0400
+Served asset /remove.png - 304 Not Modified (4ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:21:41 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 33ms (Views: 28.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 19:22:19 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"Jay Z "}, "commit"=>"add"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 10 Aug 2013 23:22:20 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/xMG2oNqBy-Y/hqdefault.jpg"], ["title", "JAY Z \"Picasso Baby: A Performance Art Film\""], ["updated_at", Sat, 10 Aug 2013 23:22:20 UTC +00:00], ["video_id", "xMG2oNqBy-Y"]]
+  [1m[35m (88.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (6.0ms)
+  Rendered tracks/create.js.erb (11.0ms)
+Completed 200 OK in 1064ms (Views: 35.0ms | ActiveRecord: 93.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:22:20 -0400
+Served asset /remove.png - 304 Not Modified (6ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:22:27 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 43ms (Views: 38.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 19:22:34 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"I am the Eggman"}, "commit"=>"add"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 10 Aug 2013 23:22:35 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/7r52ZBx0KMI/hqdefault.jpg"], ["title", "The Beatles   I Am The Walrus HD"], ["updated_at", Sat, 10 Aug 2013 23:22:35 UTC +00:00], ["video_id", "7r52ZBx0KMI"]]
+  [1m[36m (97.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/create.js.erb (10.0ms)
+Completed 200 OK in 1202ms (Views: 37.0ms | ActiveRecord: 102.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:22:35 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 19:22:37 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"Kanye West"}, "commit"=>"add"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 10 Aug 2013 23:22:39 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/q604eed4ad0/hqdefault.jpg"], ["title", "Kanye West - BLKKK SKKKN HEAD (Explicit)"], ["updated_at", Sat, 10 Aug 2013 23:22:39 UTC +00:00], ["video_id", "q604eed4ad0"]]
+  [1m[35m (55.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/create.js.erb (8.0ms)
+Completed 200 OK in 1242ms (Views: 34.0ms | ActiveRecord: 60.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:22:39 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 19:22:44 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"FUCK A NIGGA"}, "commit"=>"add"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 10 Aug 2013 23:22:45 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/lxVc3n1kpAs/hqdefault.jpg"], ["title", "DJ Mustard ft. Tee FLii, Ty$, Constantine, T. Lanez - Fuck That Nigga [New 2013]"], ["updated_at", Sat, 10 Aug 2013 23:22:45 UTC +00:00], ["video_id", "lxVc3n1kpAs"]]
+  [1m[36m (42.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (7.0ms)
+Completed 200 OK in 1007ms (Views: 27.0ms | ActiveRecord: 46.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:22:45 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:22:51 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (2.0ms)
+Completed 200 OK in 29ms (Views: 24.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:23:05 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (11.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 55ms (Views: 39.0ms | ActiveRecord: 11.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 19:23:12 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"I am the best"}, "commit"=>"add"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sat, 10 Aug 2013 23:23:13 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/j7_lSP8Vc3o/hqdefault.jpg"], ["title", "2NE1 - I AM THE BEST (내가 제일 잘 나가) M/V"], ["updated_at", Sat, 10 Aug 2013 23:23:13 UTC +00:00], ["video_id", "j7_lSP8Vc3o"]]
+  [1m[35m (81.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (9.0ms)
+Completed 200 OK in 1045ms (Views: 30.0ms | ActiveRecord: 85.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:23:13 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:23:15 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (4.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 169ms (Views: 27.0ms | ActiveRecord: 4.0ms)
+
+
+Started DELETE "/tracks/3" for 127.0.0.1 at 2013-08-10 19:24:16 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"3"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 3]]
+  [1m[35m (68.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (1.0ms)
+Completed 200 OK in 105ms (Views: 27.0ms | ActiveRecord: 71.0ms)
+
+
+Started DELETE "/tracks/4" for 127.0.0.1 at 2013-08-10 19:24:16 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"4"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 4]]
+  [1m[35m (135.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 168ms (Views: 26.0ms | ActiveRecord: 138.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:24:16 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started DELETE "/tracks/6" for 127.0.0.1 at 2013-08-10 19:24:17 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"6"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 6]]
+  [1m[35m (34.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 62ms (Views: 21.0ms | ActiveRecord: 37.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:24:17 -0400
+Served asset /remove.png - 304 Not Modified (3ms)
+
+
+Started DELETE "/tracks/6" for 127.0.0.1 at 2013-08-10 19:24:17 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"6"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "6"]]
+Completed 404 Not Found in 164ms
+
+ActiveRecord::RecordNotFound (Couldn't find Track with id=6):
+  app/controllers/tracks_controller.rb:32:in `destroy'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (59.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:24:17 -0400
+Served asset /remove.png - 304 Not Modified (3ms)
+
+
+Started DELETE "/tracks/5" for 127.0.0.1 at 2013-08-10 19:24:18 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"5"}
+  [1m[35mTrack Load (0.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = ?  [["id", 5]]
+  [1m[36m (69.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/destroy.js.erb (1.0ms)
+Completed 200 OK in 104ms (Views: 27.0ms | ActiveRecord: 71.0ms)
+
+
+Started DELETE "/tracks/7" for 127.0.0.1 at 2013-08-10 19:24:18 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"7"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = ?  [["id", 7]]
+  [1m[36m (213.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 259ms (Views: 36.0ms | ActiveRecord: 215.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:24:19 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:24:19 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started DELETE "/tracks/8" for 127.0.0.1 at 2013-08-10 19:24:20 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"8"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = ?  [["id", 8]]
+  [1m[36m (116.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 167ms (Views: 43.0ms | ActiveRecord: 118.0ms)
+
+
+Started DELETE "/tracks/1" for 127.0.0.1 at 2013-08-10 19:24:20 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"1"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = ?  [["id", 1]]
+  [1m[36m (88.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 122ms (Views: 23.0ms | ActiveRecord: 92.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:24:20 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:24:21 -0400
+Served asset /remove.png - 304 Not Modified (3ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:24:22 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 36ms (Views: 31.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:29:52 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 26ms (Views: 21.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:30:00 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 62ms (Views: 40.0ms | ActiveRecord: 1.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 19:37:56 -0400
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  Rendered tracks/_createlist.html.erb (2.0ms)
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/index.html.erb within layouts/application (86.0ms)
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+Completed 200 OK in 444ms (Views: 210.0ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 19:37:58 -0400
+Served asset /font-awesome.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 19:37:58 -0400
+Served asset /application.css - 304 Not Modified (45ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 19:37:58 -0400
+Served asset /jquery.js - 304 Not Modified (56ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 19:37:59 -0400
+Served asset /tracks.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 19:37:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 19:37:59 -0400
+Served asset /tracks.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 19:37:59 -0400
+Served asset /application.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:38:00 -0400
+Served asset /remove.png - 304 Not Modified (5ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:38:02 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (2.0ms)
+Completed 200 OK in 49ms (Views: 41.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:38:56 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (2.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 27.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:38:58 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 20.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 19:41:59 -0400
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (4.0ms)
+  Rendered tracks/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 91ms (Views: 85.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 19:42:00 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 19:42:00 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 19:42:00 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 19:42:00 -0400
+Served asset /tracks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 19:42:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 19:42:00 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 19:42:00 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:42:00 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:42:02 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 21.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:42:03 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 45ms (Views: 40.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:42:12 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/tracks/2" for 127.0.0.1 at 2013-08-10 19:42:16 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"2"}
+  [1m[35mTrack Load (0.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (21.0ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = ?  [["id", 2]]
+  [1m[36m (151.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/destroy.js.erb (1.0ms)
+Completed 200 OK in 200ms (Views: 21.0ms | ActiveRecord: 172.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 19:42:17 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 19:42:17 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 19:55:51 -0400
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  Rendered tracks/_createlist.html.erb (0.0ms)
+  Rendered tracks/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 57ms (Views: 53.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 19:55:53 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 19:55:53 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 19:55:53 -0400
+Served asset /tracks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 19:55:53 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 19:55:53 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 19:55:53 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 19:55:53 -0400
+Served asset /application.js - 304 Not Modified (29ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 19:58:26 -0400
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  Rendered tracks/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 78ms (Views: 35.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 19:58:26 -0400
+Served asset /tracks.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 19:58:26 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 19:58:26 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 19:58:26 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 19:58:26 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 19:58:26 -0400
+Served asset /tracks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 19:58:26 -0400
+Served asset /application.js - 304 Not Modified (41ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:03:07 -0400
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  Rendered tracks/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 97ms (Views: 34.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:03:08 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:03:08 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:03:08 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:03:08 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:03:08 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:03:08 -0400
+Served asset /tracks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:03:08 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:03:14 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"Run the Jewels"}, "commit"=>"add"}
+Completed 500 Internal Server Error in 938ms
+
+NoMethodError (undefined method `user_id=' for #<Track:0x5bb0de0>):
+  app/controllers/tracks_controller.rb:19:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:03:18 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"Run the Jewels"}, "commit"=>"add"}
+Completed 500 Internal Server Error in 788ms
+
+NoMethodError (undefined method `user_id=' for #<Track:0x64c2240>):
+  app/controllers/tracks_controller.rb:19:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (212.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:03:23 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"Run the Jewels"}, "commit"=>"add"}
+Completed 500 Internal Server Error in 850ms
+
+NoMethodError (undefined method `user_id=' for #<Track:0x6269c28>):
+  app/controllers/tracks_controller.rb:19:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:03:24 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"Run the Jewels"}, "commit"=>"add"}
+Completed 500 Internal Server Error in 917ms
+
+NoMethodError (undefined method `user_id=' for #<Track:0x4a691c0>):
+  app/controllers/tracks_controller.rb:19:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:03:25 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"Run the Jewels"}, "commit"=>"add"}
+Completed 500 Internal Server Error in 874ms
+
+NoMethodError (undefined method `user_id=' for #<Track:0x630c7c8>):
+  app/controllers/tracks_controller.rb:19:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:03:26 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"Run the Jewels"}, "commit"=>"add"}
+Completed 500 Internal Server Error in 871ms
+
+NoMethodError (undefined method `user_id=' for #<Track:0x4668558>):
+  app/controllers/tracks_controller.rb:19:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:03:40 -0400
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  Rendered tracks/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 64ms (Views: 42.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:03:41 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:03:41 -0400
+Served asset /tracks.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:03:41 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:03:41 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:03:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:03:41 -0400
+Served asset /tracks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:03:41 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 20:03:43 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 27.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:03:49 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"run the jewels run the jewels"}, "commit"=>"add"}
+Completed 500 Internal Server Error in 1129ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: query):
+  app/controllers/tracks_controller.rb:18:in `new'
+  app/controllers/tracks_controller.rb:18:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (61.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:03:50 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"run the jewels run the jewels"}, "commit"=>"add"}
+Completed 500 Internal Server Error in 889ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: query):
+  app/controllers/tracks_controller.rb:18:in `new'
+  app/controllers/tracks_controller.rb:18:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (53.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 20:03:52 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:05:50 -0400
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (0.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  Rendered tracks/_createlist.html.erb (0.0ms)
+  Rendered tracks/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 68ms (Views: 46.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:05:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:05:50 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:05:50 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:05:50 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:05:50 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:05:50 -0400
+Served asset /tracks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:05:51 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:05:53 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"Hello"}, "commit"=>"add"}
+Completed 500 Internal Server Error in 1064ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: query):
+  app/controllers/tracks_controller.rb:18:in `new'
+  app/controllers/tracks_controller.rb:18:in `create'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:06:01 -0400
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  Rendered tracks/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 65ms (Views: 41.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:06:02 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:06:02 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:06:02 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:06:02 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:06:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:06:02 -0400
+Served asset /tracks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:06:02 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:06:05 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"hello"}, "commit"=>"add"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (12.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Aug 2013 00:06:06 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/kK42LZqO0wA/hqdefault.jpg"], ["title", "Martin Solveig & Dragonette - Hello (Official Short Video Version HD)"], ["updated_at", Sun, 11 Aug 2013 00:06:06 UTC +00:00], ["video_id", "kK42LZqO0wA"]]
+  [1m[35m (19.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (4.0ms)
+  Rendered tracks/create.js.erb (13.0ms)
+Completed 200 OK in 1116ms (Views: 36.0ms | ActiveRecord: 32.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:06:06 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:08:25 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"run the jewels run the jewels"}, "commit"=>"add"}
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "video_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 11 Aug 2013 00:08:25 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/9Bzrj2mtAC4/hqdefault.jpg"], ["title", "Run The Jewels - Run The Jewels"], ["updated_at", Sun, 11 Aug 2013 00:08:25 UTC +00:00], ["video_id", "9Bzrj2mtAC4"]]
+  [1m[36m (17.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (4.0ms)
+  Rendered tracks/create.js.erb (9.0ms)
+Completed 200 OK in 772ms (Views: 41.0ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:08:26 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:19:46 -0400
+
+SyntaxError (C:/Users/Andrew/Documents/GitHub/music/app/controllers/application_controller.rb:7: syntax error, unexpected tUPLUS, expecting keyword_end
+	print "\n\n\n\" " + @user.id +"brapp"
+	                              ^):
+  app/controllers/tracks_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:20:19 -0400
+Processing by TracksController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/application_controller.rb:7:in `set_user'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:20:26 -0400
+Processing by TracksController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/application_controller.rb:7:in `set_user'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:21:06 -0400
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  Rendered tracks/_createlist.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 72ms (Views: 50.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:21:06 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:21:06 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:21:06 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:06 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:06 -0400
+Served asset /tracks.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:07 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:21:07 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:21:12 -0400
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  Rendered tracks/_createlist.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 59ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:21:12 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:21:13 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:13 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:21:13 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:13 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:13 -0400
+Served asset /tracks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:13 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:21:13 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:21:28 -0400
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (0.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 69ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:21:29 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:21:29 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:29 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:29 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:21:29 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:29 -0400
+Served asset /tracks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:29 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:21:29 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:21:35 -0400
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 97ms (Views: 76.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:21:36 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:36 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:21:36 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:21:36 -0400
+Served asset /tracks.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:37 -0400
+Served asset /tracks.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:37 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:21:37 -0400
+Served asset /remove.png - 304 Not Modified (9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:21:43 -0400
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 83ms (Views: 56.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:21:44 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:21:44 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:44 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:21:44 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:45 -0400
+Served asset /tracks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:21:45 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:21:45 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:22:16 -0400
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (4.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:22:16 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:22:16 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:22:16 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:22:16 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:22:16 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:22:16 -0400
+Served asset /tracks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:22:16 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:22:16 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:23:01 -0400
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 135ms (Views: 106.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:23:02 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:23:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:23:02 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:23:02 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:23:02 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:23:02 -0400
+Served asset /tracks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:23:02 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:23:02 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateTracks (20130616205845)
+Migrating to AddThumbnailToTracks (20130630225550)
+Migrating to AddColumn (20130630225625)
+Migrating to AddVideoIdToTracks (20130702224651)
+Migrating to RemoveyoutubeUrlfromtracks (20130707043017)
+Migrating to AddUserIdToTracks (20130811003127)
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (12.0ms)[0m  ALTER TABLE "tracks" ADD "user_id" varchar(255)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130811003127')[0m
+  [1m[35m (46.0ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:32:56 -0400
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  Rendered tracks/_createlist.html.erb (2.0ms)
+  Rendered tracks/_track.html.erb (6.0ms)
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/index.html.erb within layouts/application (81.0ms)
+Completed 200 OK in 472ms (Views: 285.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:32:57 -0400
+Served asset /application.css - 304 Not Modified (91ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:32:57 -0400
+Served asset /tracks.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:32:57 -0400
+Served asset /font-awesome.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:32:57 -0400
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:32:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (47ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:32:57 -0400
+Served asset /tracks.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:32:57 -0400
+Served asset /application.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:32:57 -0400
+Served asset /remove.png - 304 Not Modified (6ms)
+
+
+Started DELETE "/tracks/10" for 127.0.0.1 at 2013-08-10 20:33:00 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"10"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", "10"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (26.0ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = ?  [["id", 10]]
+  [1m[36m (52.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/destroy.js.erb (1.0ms)
+Completed 200 OK in 112ms (Views: 27.0ms | ActiveRecord: 79.0ms)
+
+
+Started DELETE "/tracks/9" for 127.0.0.1 at 2013-08-10 20:33:00 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "id"=>"9"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = ?  [["id", 9]]
+  [1m[36m (45.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 82ms (Views: 26.0ms | ActiveRecord: 50.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:33:01 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:33:06 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"Run the Jewels Pitchfork"}, "commit"=>"add"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Aug 2013 00:33:07 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/DCn2NIuRDQg/hqdefault.jpg"], ["title", "Run The Jewels - \"Run The Jewels\" - Pitchfork Music Festival 2013."], ["updated_at", Sun, 11 Aug 2013 00:33:07 UTC +00:00], ["user_id", nil], ["video_id", "DCn2NIuRDQg"]]
+  [1m[36m (54.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (4.0ms)
+  Rendered tracks/create.js.erb (11.0ms)
+Completed 200 OK in 1241ms (Views: 31.0ms | ActiveRecord: 70.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:33:07 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:33:09 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"Hello "}, "commit"=>"add"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Aug 2013 00:33:10 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/kK42LZqO0wA/hqdefault.jpg"], ["title", "Martin Solveig & Dragonette - Hello (Official Short Video Version HD)"], ["updated_at", Sun, 11 Aug 2013 00:33:10 UTC +00:00], ["user_id", nil], ["video_id", "kK42LZqO0wA"]]
+  [1m[36m (104.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (7.0ms)
+Completed 200 OK in 1493ms (Views: 26.0ms | ActiveRecord: 108.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:33:10 -0400
+Served asset /remove.png - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:33:13 -0400
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  Rendered tracks/_createlist.html.erb (0.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/_track.html.erb (1.0ms)
+  Rendered tracks/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:33:13 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:33:13 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:33:13 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:13 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:13 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:13 -0400
+Served asset /tracks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:13 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:33:13 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:33:21 -0400
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" [0m
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/index.html.erb within layouts/application (55.0ms)
+Completed 200 OK in 104ms (Views: 100.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:33:21 -0400
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:21 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:33:21 -0400
+Served asset /tracks.css - 200 OK (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:33:21 -0400
+Served asset /font-awesome.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:21 -0400
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:21 -0400
+Served asset /tracks.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:21 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:33:21 -0400
+Served asset /remove.png - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:33:40 -0400
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (4.0ms)
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/index.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 126ms (Views: 123.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:33:40 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:33:40 -0400
+Served asset /font-awesome.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:40 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:33:40 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:40 -0400
+Served asset /tracks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:40 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:33:40 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:33:55 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = '8e663005fbf56779f44308e1ac936d26'[0m
+  Rendered tracks/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 70ms (Views: 43.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:33:56 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:33:56 -0400
+Served asset /tracks.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:33:56 -0400
+Served asset /font-awesome.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:56 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:56 -0400
+Served asset /tracks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:33:56 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:34:04 -0400
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 119ms (Views: 93.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:34:04 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:34:04 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:34:04 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:34:04 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:34:05 -0400
+Served asset /tracks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:34:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:34:05 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:34:05 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started DELETE "/tracks/12" for 127.0.0.1 at 2013-08-10 20:34:06 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hHp3zI/dvR4RfwUHICZuEnOqrlR/TM9KpStc4tacg2Y=", "id"=>"12"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "12"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 12]]
+  [1m[35m (36.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 19.0ms | ActiveRecord: 40.0ms)
+
+
+Started DELETE "/tracks/11" for 127.0.0.1 at 2013-08-10 20:34:06 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hHp3zI/dvR4RfwUHICZuEnOqrlR/TM9KpStc4tacg2Y=", "id"=>"11"}
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 11]]
+  [1m[35m (38.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 69ms (Views: 23.0ms | ActiveRecord: 41.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:34:07 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:34:07 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:34:09 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = '8e663005fbf56779f44308e1ac936d26'[0m
+  Rendered tracks/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 73ms (Views: 45.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:34:09 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (2.0ms)
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = '8e663005fbf56779f44308e1ac936d26'
+  Rendered tracks/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:34:10 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:34:10 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:34:10 -0400
+Served asset /tracks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:34:10 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:34:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:34:10 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:34:10 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:34:12 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hHp3zI/dvR4RfwUHICZuEnOqrlR/TM9KpStc4tacg2Y=", "track"=>{"query"=>"Hello"}, "commit"=>"add"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Aug 2013 00:34:13 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/kK42LZqO0wA/hqdefault.jpg"], ["title", "Martin Solveig & Dragonette - Hello (Official Short Video Version HD)"], ["updated_at", Sun, 11 Aug 2013 00:34:13 UTC +00:00], ["user_id", nil], ["video_id", "kK42LZqO0wA"]]
+  [1m[35m (71.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (9.0ms)
+Completed 200 OK in 1285ms (Views: 30.0ms | ActiveRecord: 75.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:34:13 -0400
+Served asset /remove.png - 304 Not Modified (4ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:34:17 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hHp3zI/dvR4RfwUHICZuEnOqrlR/TM9KpStc4tacg2Y=", "track"=>{"query"=>"Run the Jewels Run the Jewels"}, "commit"=>"add"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Aug 2013 00:34:18 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/9Bzrj2mtAC4/hqdefault.jpg"], ["title", "Run The Jewels - Run The Jewels"], ["updated_at", Sun, 11 Aug 2013 00:34:18 UTC +00:00], ["user_id", nil], ["video_id", "9Bzrj2mtAC4"]]
+  [1m[35m (75.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (7.0ms)
+Completed 200 OK in 1016ms (Views: 26.0ms | ActiveRecord: 79.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:34:18 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 20:34:24 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hHp3zI/dvR4RfwUHICZuEnOqrlR/TM9KpStc4tacg2Y=", "track"=>{"query"=>"Run the Jewels Pitchfork Live"}, "commit"=>"add"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Aug 2013 00:34:26 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/W6OBBPQG0zg/hqdefault.jpg"], ["title", "Run The Jewels - \"36\" chain\" - Pitchfork Music Festival 2013"], ["updated_at", Sun, 11 Aug 2013 00:34:26 UTC +00:00], ["user_id", nil], ["video_id", "W6OBBPQG0zg"]]
+  [1m[35m (439.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/create.js.erb (10.0ms)
+Completed 200 OK in 3475ms (Views: 39.0ms | ActiveRecord: 443.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 20:34:27 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-10 20:34:28 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (2.0ms)
+Completed 200 OK in 36ms (Views: 24.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:34:34 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = '8e663005fbf56779f44308e1ac936d26'[0m
+  Rendered tracks/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 105ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:34:35 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:34:35 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:34:35 -0400
+Served asset /font-awesome.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:34:35 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:34:35 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:34:35 -0400
+Served asset /tracks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:34:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 20:41:48 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = '8e663005fbf56779f44308e1ac936d26'
+  Rendered tracks/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 112ms (Views: 45.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 20:41:49 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 20:41:49 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 20:41:49 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 20:41:49 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 20:41:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 20:41:49 -0400
+Served asset /tracks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 20:41:49 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 21:54:03 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (2.0ms)
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = '8e663005fbf56779f44308e1ac936d26'[0m
+  Rendered tracks/index.html.erb within layouts/application (150.0ms)
+Completed 200 OK in 1127ms (Views: 709.0ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 21:54:05 -0400
+Served asset /application.css - 304 Not Modified (35ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 21:54:05 -0400
+Served asset /tracks.css - 304 Not Modified (41ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 21:54:06 -0400
+Served asset /font-awesome.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 21:54:06 -0400
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 21:54:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 21:54:06 -0400
+Served asset /tracks.js - 304 Not Modified (45ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 21:54:06 -0400
+Served asset /application.js - 304 Not Modified (25ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 21:55:48 -0400
+Processing by TracksController#index as HTML
+Completed 500 Internal Server Error in 10ms
+
+NameError (undefined local variable or method `scheduler' for #<TracksController:0x38e5120>):
+  app/controllers/tracks_controller.rb:38:in `clear_list'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (72.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 21:55:56 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (0.0ms)
+  [1m[35mTrack Load (0.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = '8e663005fbf56779f44308e1ac936d26'
+  Rendered tracks/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 77ms (Views: 46.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 21:55:57 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 21:55:57 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 21:55:57 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 21:55:57 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 21:55:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 21:55:57 -0400
+Served asset /tracks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 21:55:57 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-10 22:00:10 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ad433d67d9d5ab408dde4e772039ef88'[0m
+  Rendered tracks/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 78ms (Views: 49.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-10 22:00:10 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-10 22:00:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-10 22:00:10 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-10 22:00:10 -0400
+Served asset /tracks.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-10 22:00:11 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-10 22:00:11 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-10 22:00:11 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 22:00:17 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"andrew"}, "commit"=>"add"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (198.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Aug 2013 02:00:18 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/GLsK-ZoL9sY/hqdefault.jpg"], ["title", "Andrew Wiggins OFFICIAL Senior Year Hoopmixtape! Best Player In High School!"], ["updated_at", Sun, 11 Aug 2013 02:00:18 UTC +00:00], ["user_id", nil], ["video_id", "GLsK-ZoL9sY"]]
+  [1m[36m (52.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (6.0ms)
+  Rendered tracks/create.js.erb (34.0ms)
+Completed 200 OK in 1515ms (Views: 104.0ms | ActiveRecord: 251.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 22:00:19 -0400
+Served asset /remove.png - 304 Not Modified (64ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 22:00:21 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"motherbaster"}, "commit"=>"add"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (18.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Aug 2013 02:00:21 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/L24zW8OITb4/hqdefault.jpg"], ["title", "Big Time Teddy by Lord Cut Glass"], ["updated_at", Sun, 11 Aug 2013 02:00:21 UTC +00:00], ["user_id", nil], ["video_id", "L24zW8OITb4"]]
+  [1m[36m (42.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (6.0ms)
+Completed 200 OK in 287ms (Views: 27.0ms | ActiveRecord: 61.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 22:00:22 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-10 22:00:26 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K3nDM4Q0GAKbkc3Y+VHwTgkGxt0dizhG6AXjJ1MKyw0=", "track"=>{"query"=>"ok yaar"}, "commit"=>"add"}
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Aug 2013 02:00:27 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/EpSgFCazIYs/hqdefault.jpg"], ["title", "Yaar Indha Saalai Oram Pookal"], ["updated_at", Sun, 11 Aug 2013 02:00:27 UTC +00:00], ["user_id", nil], ["video_id", "EpSgFCazIYs"]]
+  [1m[36m (113.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (7.0ms)
+Completed 200 OK in 1107ms (Views: 28.0ms | ActiveRecord: 116.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-10 22:00:27 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ad433d67d9d5ab408dde4e772039ef88'
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ad433d67d9d5ab408dde4e772039ef88'[0m
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ad433d67d9d5ab408dde4e772039ef88'
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ad433d67d9d5ab408dde4e772039ef88'[0m
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = '8e663005fbf56779f44308e1ac936d26'
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/monitor.rb:211)
+DEPRECATION WARNING: Database connections will not be closed automatically, please close your
+database connection at the end of the thread by calling `close` on your
+connection.  For example: ActiveRecord::Base.connection.close
+. (called from mon_synchronize at C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/monitor.rb:211)
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = '8e663005fbf56779f44308e1ac936d26'[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:01:30 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[35mTrack Load (0.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" IS NULL
+  Rendered tracks/_track.html.erb (5.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/index.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 164ms (Views: 135.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:01:31 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:01:31 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:01:31 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:01:31 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:01:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:01:31 -0400
+Served asset /tracks.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:01:31 -0400
+Served asset /application.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:01:31 -0400
+Served asset /remove.png - 304 Not Modified (45ms)
+
+
+Started DELETE "/tracks/18" for 127.0.0.1 at 2013-08-11 10:01:36 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "id"=>"18"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "18"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 18]]
+  [1m[35m (47.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (1.0ms)
+Completed 200 OK in 92ms (Views: 32.0ms | ActiveRecord: 50.0ms)
+
+
+Started DELETE "/tracks/17" for 127.0.0.1 at 2013-08-11 10:01:36 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "id"=>"17"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "17"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 17]]
+  [1m[35m (116.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 144ms (Views: 20.0ms | ActiveRecord: 118.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:01:36 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:01:37 -0400
+Served asset /remove.png - 304 Not Modified (3ms)
+
+
+Started DELETE "/tracks/15" for 127.0.0.1 at 2013-08-11 10:01:37 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "id"=>"15"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "15"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 15]]
+  [1m[35m (45.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 89ms (Views: 34.0ms | ActiveRecord: 48.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:01:37 -0400
+Served asset /remove.png - 304 Not Modified (3ms)
+
+
+Started DELETE "/tracks/14" for 127.0.0.1 at 2013-08-11 10:01:37 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "id"=>"14"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 14]]
+  [1m[35m (49.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 88ms (Views: 29.0ms | ActiveRecord: 53.0ms)
+
+
+Started DELETE "/tracks/13" for 127.0.0.1 at 2013-08-11 10:01:38 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "id"=>"13"}
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 13]]
+  [1m[35m (35.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 79ms (Views: 28.0ms | ActiveRecord: 39.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:01:38 -0400
+Served asset /remove.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:01:38 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started DELETE "/tracks/16" for 127.0.0.1 at 2013-08-11 10:01:40 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "id"=>"16"}
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "16"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 16]]
+  [1m[35m (77.0ms)[0m  commit transaction
+  Rendered tracks/destroy.js.erb (0.0ms)
+Completed 200 OK in 109ms (Views: 22.0ms | ActiveRecord: 78.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:01:40 -0400
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-11 10:01:45 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "track"=>{"query"=>"I am the eggman"}, "commit"=>"add"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Aug 2013 14:01:46 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/7r52ZBx0KMI/hqdefault.jpg"], ["title", "The Beatles   I Am The Walrus HD"], ["updated_at", Sun, 11 Aug 2013 14:01:46 UTC +00:00], ["user_id", nil], ["video_id", "7r52ZBx0KMI"]]
+  [1m[35m (76.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/create.js.erb (7.0ms)
+Completed 200 OK in 1222ms (Views: 34.0ms | ActiveRecord: 81.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:01:46 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-11 10:01:50 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "track"=>{"query"=>"They are the eggmen"}, "commit"=>"add"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Aug 2013 14:01:51 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/7r52ZBx0KMI/hqdefault.jpg"], ["title", "The Beatles   I Am The Walrus HD"], ["updated_at", Sun, 11 Aug 2013 14:01:51 UTC +00:00], ["user_id", nil], ["video_id", "7r52ZBx0KMI"]]
+  [1m[35m (45.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (7.0ms)
+Completed 200 OK in 851ms (Views: 26.0ms | ActiveRecord: 49.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:01:51 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-11 10:01:54 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "track"=>{"query"=>"I am the walrus"}, "commit"=>"add"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Aug 2013 14:01:55 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/Ap6kSV_U45o/hqdefault.jpg"], ["title", "The Beatles - I am the walrus HD and HQ"], ["updated_at", Sun, 11 Aug 2013 14:01:55 UTC +00:00], ["user_id", nil], ["video_id", "Ap6kSV_U45o"]]
+  [1m[35m (14.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (6.0ms)
+Completed 200 OK in 938ms (Views: 25.0ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:01:55 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-11 10:01:58 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "track"=>{"query"=>"Goo Goo Gjoob"}, "commit"=>"add"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Aug 2013 14:01:59 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/NMcyjbEE25E/hqdefault.jpg"], ["title", "Lollipop Chainsaw - Episode 11 - Goo Goo G'joob"], ["updated_at", Sun, 11 Aug 2013 14:01:59 UTC +00:00], ["user_id", nil], ["video_id", "NMcyjbEE25E"]]
+  [1m[35m (78.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (8.0ms)
+Completed 200 OK in 976ms (Views: 31.0ms | ActiveRecord: 81.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:01:59 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:02:07 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (2.0ms)
+Completed 200 OK in 93ms (Views: 85.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:02:17 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 23ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:02:22 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 34ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:03:22 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:03:23 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:03:23 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:03:23 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:03:23 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:03:23 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:03:23 -0400
+Served asset /tracks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:03:23 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:03:25 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:03:29 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  Rendered tracks/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 43ms (Views: 39.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:03:29 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:03:30 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:03:30 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:03:30 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:03:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:03:30 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:03:30 -0400
+Served asset /tracks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:03:30 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:03:31 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  Rendered tracks/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 91ms (Views: 87.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:03:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:03:31 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:03:31 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:03:31 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:03:31 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:03:31 -0400
+Served asset /tracks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:03:31 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:03:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:03:33 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 48ms (Views: 36.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:03:33 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 21.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:03:52 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:04:36 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 20.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:04:39 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:04:57 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 28ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:05:00 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 37ms (Views: 29.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:05:06 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 51ms (Views: 43.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:07:36 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 36ms (Views: 28.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:07:41 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."title" FROM "tracks" 
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 117ms (Views: 77.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:08:15 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 90ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:08:16 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:08:16 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:08:16 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:08:16 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:08:16 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:08:16 -0400
+Served asset /tracks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:08:16 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:08:19 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 26ms (Views: 20.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:11:35 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 23.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:12:26 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 31ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:15:02 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  Rendered tracks/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 59ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:15:02 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:15:03 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:15:03 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:15:03 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:15:03 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:15:03 -0400
+Served asset /tracks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:15:03 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:18:36 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:18:36 -0400
+Served asset /application.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:18:36 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:18:36 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:18:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:18:36 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:18:36 -0400
+Served asset /tracks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:18:36 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:18:40 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 29ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:35:40 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (0.0ms)
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  Rendered tracks/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 99ms (Views: 77.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:35:41 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:35:41 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:35:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:35:41 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:35:41 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:35:41 -0400
+Served asset /tracks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:35:41 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:35:44 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+Completed 500 Internal Server Error in 10ms
+
+NoMethodError (undefined method `user_id' for #<TracksController:0x402be08>):
+  app/controllers/tracks_controller.rb:48:in `retrieve'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (89.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:35:45 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `user_id' for #<TracksController:0x5c509f8>):
+  app/controllers/tracks_controller.rb:48:in `retrieve'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:35:45 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `user_id' for #<TracksController:0x5cf6fd0>):
+  app/controllers/tracks_controller.rb:48:in `retrieve'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:35:48 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `user_id' for #<TracksController:0x38f7f18>):
+  app/controllers/tracks_controller.rb:48:in `retrieve'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:35:49 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `user_id' for #<TracksController:0x5ca1248>):
+  app/controllers/tracks_controller.rb:48:in `retrieve'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (56.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:35:55 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+Completed 500 Internal Server Error in 9ms
+
+NoMethodError (undefined method `user_id' for #<TracksController:0x3b79858>):
+  app/controllers/tracks_controller.rb:48:in `retrieve'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:35:55 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+Completed 500 Internal Server Error in 9ms
+
+NoMethodError (undefined method `user_id' for #<TracksController:0x5c71a10>):
+  app/controllers/tracks_controller.rb:48:in `retrieve'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (66.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (124.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-11 10:35:58 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "track"=>{"query"=>"Hello"}, "commit"=>"add"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Aug 2013 14:35:59 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/kK42LZqO0wA/hqdefault.jpg"], ["title", "Martin Solveig & Dragonette - Hello (Official Short Video Version HD)"], ["updated_at", Sun, 11 Aug 2013 14:35:59 UTC +00:00], ["user_id", nil], ["video_id", "kK42LZqO0wA"]]
+  [1m[36m (78.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/create.js.erb (9.0ms)
+Completed 200 OK in 1858ms (Views: 32.0ms | ActiveRecord: 81.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:36:00 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:36:01 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+Completed 500 Internal Server Error in 9ms
+
+NoMethodError (undefined method `user_id' for #<TracksController:0x3c875b8>):
+  app/controllers/tracks_controller.rb:48:in `retrieve'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (63.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:36:20 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (0.0ms)
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 82ms (Views: 51.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:36:21 -0400
+Served asset /tracks.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:36:21 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:36:21 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:36:21 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:36:21 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:36:21 -0400
+Served asset /tracks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:36:21 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:36:23 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 22ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:37:32 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" [0m
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 24.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:40:05 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[35mTrack Load (0.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  Rendered tracks/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 65ms (Views: 42.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:40:06 -0400
+Served asset /tracks.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:40:06 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:40:06 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:40:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:40:06 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:40:06 -0400
+Served asset /tracks.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:40:06 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:40:08 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."title" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 17.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:40:10 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."title" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 37.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:40:14 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."title" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-11 10:40:16 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "track"=>{"query"=>"Hello"}, "commit"=>"add"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Aug 2013 14:40:17 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/kK42LZqO0wA/hqdefault.jpg"], ["title", "Martin Solveig & Dragonette - Hello (Official Short Video Version HD)"], ["updated_at", Sun, 11 Aug 2013 14:40:17 UTC +00:00], ["user_id", nil], ["video_id", "kK42LZqO0wA"]]
+  [1m[35m (60.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/create.js.erb (9.0ms)
+Completed 200 OK in 939ms (Views: 33.0ms | ActiveRecord: 65.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:40:17 -0400
+Served asset /remove.png - 304 Not Modified (4ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:40:18 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."title" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 36ms (Views: 28.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:40:21 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."title" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 29ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:40:37 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[36mTrack Load (0.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 64ms (Views: 42.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:40:38 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:40:38 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:40:38 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:40:38 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:40:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:40:38 -0400
+Served asset /tracks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:40:38 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-11 10:40:43 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "track"=>{"query"=>"hello"}, "commit"=>"add"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Aug 2013 14:40:45 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/kK42LZqO0wA/hqdefault.jpg"], ["title", "Martin Solveig & Dragonette - Hello (Official Short Video Version HD)"], ["updated_at", Sun, 11 Aug 2013 14:40:45 UTC +00:00], ["user_id", nil], ["video_id", "kK42LZqO0wA"]]
+  [1m[36m (16.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (4.0ms)
+  Rendered tracks/create.js.erb (9.0ms)
+Completed 200 OK in 1330ms (Views: 33.0ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:40:45 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:40:46 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 32ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:40:48 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 29ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:41:35 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  Rendered tracks/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 70ms (Views: 43.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:41:36 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:41:36 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:41:36 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:41:36 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:41:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:41:36 -0400
+Served asset /tracks.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:41:36 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:41:38 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."title" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 56ms (Views: 20.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-11 10:41:40 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "track"=>{"query"=>"ikhi"}, "commit"=>"add"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 11 Aug 2013 14:41:41 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/NrBPS1mnqlw/hqdefault.jpg"], ["title", "Delayey Ikhi By: Dawit Shilan"], ["updated_at", Sun, 11 Aug 2013 14:41:41 UTC +00:00], ["user_id", nil], ["video_id", "NrBPS1mnqlw"]]
+  [1m[35m (51.0ms)[0m  commit transaction
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (12.0ms)
+Completed 200 OK in 1001ms (Views: 37.0ms | ActiveRecord: 55.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:41:41 -0400
+Served asset /remove.png - 304 Not Modified (2ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:41:42 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."title" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 29.0ms | ActiveRecord: 2.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:45:53 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (2.0ms)
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/index.html.erb within layouts/application (139.0ms)
+Completed 200 OK in 1245ms (Views: 611.0ms | ActiveRecord: 36.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:45:56 -0400
+Served asset /application.css - 304 Not Modified (69ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:45:56 -0400
+Served asset /tracks.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:45:56 -0400
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:45:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:45:56 -0400
+Served asset /font-awesome.css - 304 Not Modified (48ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:45:56 -0400
+Served asset /tracks.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:45:56 -0400
+Served asset /application.js - 304 Not Modified (27ms)
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (130.0ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = ?  [["id", 19]]
+  [1m[36m (80.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 20]]
+  [1m[35m (15.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = ?  [["id", 21]]
+  [1m[36m (14.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 22]]
+  [1m[35m (12.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = ?  [["id", 23]]
+  [1m[36m (54.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 24]]
+  [1m[35m (146.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = ?  [["id", 25]]
+  [1m[36m (44.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mDELETE FROM "tracks" WHERE "tracks"."id" = ?[0m  [["id", 26]]
+  [1m[35m (64.0ms)[0m  commit transaction
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:47:48 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (0.0ms)
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 51ms (Views: 41.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:47:48 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:47:48 -0400
+Served asset /font-awesome.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:47:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:47:49 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:47:49 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:47:49 -0400
+Served asset /tracks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:47:49 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:47:50 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/retrieve.js.erb (2.0ms)
+Completed 200 OK in 39ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:53:50 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (2.0ms)
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/index.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 418ms (Views: 223.0ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:53:51 -0400
+Served asset /tracks.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:53:51 -0400
+Served asset /application.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:53:51 -0400
+Served asset /font-awesome.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:53:51 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:53:51 -0400
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:53:51 -0400
+Served asset /tracks.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:53:51 -0400
+Served asset /application.js - 304 Not Modified (54ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:53:54 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 124ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-11 10:53:59 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "track"=>{"query"=>"Hello"}, "commit"=>"add"}
+  [1m[35m (0.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (208.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Aug 2013 14:54:00 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/kK42LZqO0wA/hqdefault.jpg"], ["title", "Martin Solveig & Dragonette - Hello (Official Short Video Version HD)"], ["updated_at", Sun, 11 Aug 2013 14:54:00 UTC +00:00], ["user_id", nil], ["video_id", "kK42LZqO0wA"]]
+  [1m[36m (30.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (5.0ms)
+  Rendered tracks/create.js.erb (16.0ms)
+Completed 200 OK in 1199ms (Views: 43.0ms | ActiveRecord: 238.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:54:00 -0400
+Served asset /remove.png - 304 Not Modified (25ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:54:01 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 30ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:55:27 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (1.0ms)
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  Rendered tracks/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 63ms (Views: 38.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:55:28 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:55:28 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:55:28 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:55:28 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:55:28 -0400
+Served asset /tracks.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:55:28 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:55:28 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-11 10:55:47 -0400
+Processing by TracksController#index as HTML
+  Rendered tracks/_createlist.html.erb (0.0ms)
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2013-08-11 10:55:48 -0400
+Served asset /font-awesome.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-11 10:55:48 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-11 10:55:48 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2013-08-11 10:55:48 -0400
+Served asset /tracks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2013-08-11 10:55:48 -0400
+Served asset /tracks.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-11 10:55:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-11 10:55:48 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-11 10:55:50 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "track"=>{"query"=>"Hello"}, "commit"=>"add"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Aug 2013 14:55:51 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/kK42LZqO0wA/hqdefault.jpg"], ["title", "Martin Solveig & Dragonette - Hello (Official Short Video Version HD)"], ["updated_at", Sun, 11 Aug 2013 14:55:51 UTC +00:00], ["user_id", "ffc3357cfeafef3df1996b8c9f1b4437"], ["video_id", "kK42LZqO0wA"]]
+  [1m[36m (67.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (3.0ms)
+  Rendered tracks/create.js.erb (8.0ms)
+Completed 200 OK in 1244ms (Views: 30.0ms | ActiveRecord: 72.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:55:52 -0400
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:55:53 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  [1m[36m (0.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/retrieve.js.erb (0.0ms)
+Completed 200 OK in 42ms (Views: 32.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tracks" for 127.0.0.1 at 2013-08-11 10:56:07 -0400
+Processing by TracksController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "track"=>{"query"=>"I am a cool cat"}, "commit"=>"add"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "tracks" ("created_at", "thumbnail_url", "title", "updated_at", "user_id", "video_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 11 Aug 2013 14:56:08 UTC +00:00], ["thumbnail_url", "http://i.ytimg.com/vi/KJiMXci6PAg/hqdefault.jpg"], ["title", "Frantone Peachfuzz vs Danelectro Cool Cat Fuzz Shootout Pedal Demo"], ["updated_at", Sun, 11 Aug 2013 14:56:08 UTC +00:00], ["user_id", "ffc3357cfeafef3df1996b8c9f1b4437"], ["video_id", "KJiMXci6PAg"]]
+  [1m[36m (104.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/_track.html.erb (2.0ms)
+  Rendered tracks/create.js.erb (7.0ms)
+Completed 200 OK in 1028ms (Views: 27.0ms | ActiveRecord: 107.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:56:08 -0400
+Served asset /remove.png - 304 Not Modified (69ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:56:08 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 44ms (Views: 25.0ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/tracks/28" for 127.0.0.1 at 2013-08-11 10:56:13 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "id"=>"28"}
+  [1m[35mTrack Load (0.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", "28"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = ?  [["id", 28]]
+  [1m[36m (99.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/destroy.js.erb (1.0ms)
+Completed 200 OK in 139ms (Views: 26.0ms | ActiveRecord: 101.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:56:14 -0400
+Served asset /remove.png - 304 Not Modified (3ms)
+
+
+Started GET "/retrieve?utf8=%E2%9C%93&commit=create+playlist" for 127.0.0.1 at 2013-08-11 10:56:14 -0400
+Processing by TracksController#retrieve as JS
+  Parameters: {"utf8"=>"✓", "commit"=>"create playlist"}
+  [1m[35m (1.0ms)[0m  SELECT "tracks"."video_id" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'
+  [1m[36m (1.0ms)[0m  [1mSELECT "tracks"."title" FROM "tracks" WHERE "tracks"."user_id" = 'ffc3357cfeafef3df1996b8c9f1b4437'[0m
+  Rendered tracks/retrieve.js.erb (1.0ms)
+Completed 200 OK in 38ms (Views: 30.0ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/tracks/29" for 127.0.0.1 at 2013-08-11 10:56:20 -0400
+Processing by TracksController#destroy as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WqVr4Z3Q0buFIfhqTbxNCy83ehWpd89yjcUiwc1RCzM=", "id"=>"29"}
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", "29"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  DELETE FROM "tracks" WHERE "tracks"."id" = ?  [["id", 29]]
+  [1m[36m (72.0ms)[0m  [1mcommit transaction[0m
+  Rendered tracks/destroy.js.erb (1.0ms)
+Completed 200 OK in 104ms (Views: 23.0ms | ActiveRecord: 76.0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-08-11 10:56:20 -0400
+Served asset /remove.png - 304 Not Modified (2ms)

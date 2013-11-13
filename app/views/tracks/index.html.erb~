@@ -1,0 +1,27 @@
+<h1>Playlist</h1>
+
+<div id = "error_message">
+</div>
+
+<%= form_tag(@track, :remote=>true, :method => :post,  :class => 'new_track') do %>
+		<%= text_field_tag "track_query", nil, :placeholder => 'enter a query or a link', :id => "search_bar", :name => "track[query]", :size => 30, :required => true %>
+		<%= submit_tag "add" , :name => 'commit'%>
+	</p>
+<% end %>
+
+<hr />
+
+<div id="modal-background"></div>
+	<div id="modal-content">
+		<div id="player"></div>
+		<button id="modal-close" onclick="stopVideo();">Close Modal Window</button>
+	</div>
+
+<div id="list_of_tracks">
+<br>
+	<%= render partial: "createlist" %>
+
+	<% @tracks.each do |track| %>
+			<%= render track %>
+	<% end %>
+</div>

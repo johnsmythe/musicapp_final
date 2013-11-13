@@ -1,0 +1,16 @@
+<%if @track.valid? %>
+	  $('#error_message').fadeOut().empty();
+	  $('<%= j(render(@track)) %>').hide().appendTo("#list_of_tracks").fadeIn();
+	  var thing = document.getElementById('search_bar');
+	  thing.value="";
+<% elsif @track.errors.any? %>
+	if($.trim($("#error_message").html())==''){
+		<% @track.errors.full_messages.each do |msg| %>
+			$('#error_message').hide().append('<%= msg %>');
+		<% end %>
+			$('#search_bar').val('');
+			$('#error_message').fadeIn();
+	}
+<% else %>
+  alert('Something Went Wrong');
+<% end %>

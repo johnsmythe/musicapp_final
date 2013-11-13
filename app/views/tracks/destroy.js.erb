@@ -1,0 +1,4 @@
+if($.trim($("#error_message").html())!=''){
+	$('#error_message').fadeOut().empty();
+}
+$("#track_<%= @track.id %>").fadeOut();

@@ -1,0 +1,34 @@
+var $list = <%= raw @tracklist.to_json %>;
+var $tracknames = <%= raw @tracknames.to_json %>;
+
+generatePlaylist($list);
+$('#navigation').empty();
+var $listtable = $("<table id=\'navtable\'></table>");
+for (var $idx in $tracknames) {
+	console.log($list[$idx]);
+	var $row = $("<tr id="+$idx+"></tr>");
+	$row.append($tracknames[$idx]);
+	$listtable.append($row);
+}
+$('#navigation').append($listtable);
+
+$('tr').click(function() {
+	console.log("index is at: "+$(this).attr('id'));
+	$newlist = $list.slice($(this).attr('id'),$list.length)
+	console.log("newlist: "+$newlist);
+	generatePlaylist($newlist);
+});
+
+$('tr').mouseover(function(){
+	$(this).addClass('hover');
+});
+
+$('tr').mouseout(function(){
+	$(this).removeClass('hover');
+});
+
+
+
+
+
+	

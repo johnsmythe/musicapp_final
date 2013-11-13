@@ -1,0 +1,43 @@
+class TracksController < ApplicationController
+
+include TracksHelper
+
+def index
+	@track = Track.new
+	@tracks = Track.all
+end
+
+def create
+	if is_url(params[:track][:query])	
+		@trackinfo = getTrackInfo(params[:track][:query])
+	else
+		@trackinfo = youTubeQuery(params[:track][:query])
+
+	end
+
+	@track = Track.new(@trackinfo)
+	@tracks = Track.all
+	@video_ids = Track.pluck(:video_id)	
+	
+	if @track.save
+		puts "object able to be created"
+	else
+		#puts "random number is: #{@random}"
+		puts "#{@track.errors.full_messages}"
+		#render :action=>"index"
+	end
+end
+
+def destroy
+	@track = Track.find(params[:id])
+	@track.destroy
+end
+
+def retrieve
+	puts "in this action"
+	@tracklist = Track.pluck(:video_id)
+	@tracknames = Track.pluck(:
+	puts "done this action"
+end
+end
+

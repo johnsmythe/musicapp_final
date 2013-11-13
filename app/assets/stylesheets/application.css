@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+ 
+ /*
+ *= require 'font-awesome'
+ */
+
+    #modal-background {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: .50;
+        -webkit-opacity: .5;
+        -moz-opacity: .5;
+        filter: alpha(opacity=50);
+        z-index: 1000;
+    }
+
+    #player{
+    	width:480px;
+    	height:350px;
+	float: left;
+    }
+
+    #modal-content {
+        background-color: white;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        box-shadow: 0 0 20px 0 #222;
+        -webkit-box-shadow: 0 0 20px 0 #222;
+        -moz-box-shadow: 0 0 20px 0 #222;
+        display: none;
+        padding: 10px;
+        position: absolute;
+
+        height:350px;
+        width: 630px;
+
+        margin-left:400px;
+        z-index: 1000;
+    }
+
+    #modal-background.active, #modal-content.active {
+        display: block;
+    }
+
+    #navigation{
+	float:left;
+	overflow:scroll;
+	height: 350px;
+	padding-left:10px;
+	padding-right:5px;
+	width:130px;
+    }
+
+    #modal-close{
+	float:bottom;
+    }
+
+    .hover
+    {
+	background-color:rgb(40, 104, 150);
+	color:white;
+	cursor:default;
+    }
+
